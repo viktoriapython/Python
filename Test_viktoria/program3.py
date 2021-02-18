@@ -1,28 +1,10 @@
-a = 5
-b = 3
-c = 4
+side_a, side_b, side_c = input('Please enter three sides of triangle separated by coma: ').split(', ')
 
-
-def squares(c):
-    c = a ** a + b ** b
-    return c
-
-def multiplier(number, multiplier):
-    result = number * multiplier
-    return result
-
-print(squares(c))
+if float(side_c) ** 2 == float(side_a) ** 2 + float(side_b) ** 2:
+    print('Triangle is RIGHT')
+else:
+    print('Triangle is NOT RIGHT')
 
 
 
 
-# def squares(x):
-#     y = x ** 2
-#     return y
-#
-# def multiplier(number, multiplier):
-#     result = number * multiplier
-#     return result
-#
-# for number in range(1, 101):
-#     print(squares(number))
